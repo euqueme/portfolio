@@ -3,19 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <title>Maru's Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Josefin+Slab:400,400i,600i,700,700i&display=swap" rel="stylesheet">
   </head>
-<body>
-    <header>
-        <nav>
-        </nav>
-    </header>
-    <main>
-        <section id='Home'></section>
-        <section id="About"></section>
-        <section id="Portfolio"></section>
-    </main>
-    <footer></footer>
-</body>
+  <body>
+      <header class="d-flex justify-content-center">
+          <nav class="col-md-8">
+            <ul class="d-flex justify-content-start">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#About">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#Portfolio">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#Contact">CONTACT</a>
+                </li>
+            </ul>
+          </nav>
+        </header>
+        <main class="row d-flex justify-content-center">
+            <section class="col-md-8">
+                <h1>Home</h1>    
+            </section>
+            <section id="About" class="col-md-8">
+                <h2>About</h2>
+            </section>
+            <section id="Portfolio" class="col-md-8">
+                <h2>Portfolio</h2>
+            </section>
+        </main>
+        <footer class="row d-flex justify-content-center">
+            <section id="Contact" class="col-md-8">
+                <h2>Contact me!</h2>
+            </section>
+        </footer>
+    </body>
 </html>

@@ -101,9 +101,11 @@ section {
   display: block;
 }
 
-body {
+body, a {
   line-height: 1;
   background: #E5E2D3;
+  font-family: 'Josefin Slab', serif;
+  color: #C77942;
 }
 
 ol,
@@ -129,7 +131,26 @@ table {
   border-spacing: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
-  border: white 2px solid;
+  border: #E5E2D3 0.1px solid;
+}
+
+header {
+    border-width: 15px 0 0 0;
+    border-color: #C77942;
+}
+
+nav {
+    margin: 10px auto;
+}
+
+nav ul li {
+    margin: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
 }
