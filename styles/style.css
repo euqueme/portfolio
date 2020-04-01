@@ -97,11 +97,12 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+div {
   display: block;
 }
 
-body, a {
+body, a, #About a {
   line-height: 1;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
@@ -174,10 +175,60 @@ main #Home h1:nth-of-type(2) {
 
 #hexagon {
     transform: rotate(90deg);
-    z-index: 1;
     height: 100px;
+}
+
+h2, #hexagon {
+  z-index: 1;
 }
 
 main #Home p, #photo {
   top: -10%;
+}
+
+h2 {
+  font-size: 1.5em;
+  top: -15px;
+  width: max-content;
+  background: #E5E2D3;
+  padding: 0 10px;
+}
+
+.b-separator {
+  border-top: rgba(198, 196, 173, 1) 4px solid;
+}
+
+#About a {
+  background-color: transparent;
+  display: table;
+  border: 1px solid #C77942;
+  padding: 8px 45px;
+}
+
+h2, h3, #About a {
+  position: relative;
+}
+
+h2, h3, #About a {
+  margin: 0 auto;
+}
+
+h3, #About a {
+  font-size: 1.1em;
+}
+
+.o-separator {
+  border-bottom: #C77942 3px solid;
+  width: 45px;
+  margin: 10px auto;
+}
+
+#About p {
+  font-family: 'EB Garamond', serif;
+  padding: 0 80px 80px;
+  line-height: normal;
+}
+
+#About, #Portfolio {
+  top: -80px;
 }
