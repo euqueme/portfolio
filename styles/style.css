@@ -137,7 +137,7 @@ a:hover {
 
 * {
   box-sizing: border-box;
-  border: #E5E2D3 0.1px solid;
+  border: transparent 0.1px solid;
 }
 
 header {
@@ -145,7 +145,7 @@ header {
     border-color: #C77942;
 }
 
-nav {
+nav, section img, section h1 {
     margin: 10px auto;
 }
 
@@ -153,4 +153,31 @@ nav ul li {
     margin: 5px;
     font-size: 0.9em;
     font-weight: bold;
+}
+
+main #Home p {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    z-index: 2;
+}
+
+main #Home h1 {
+    top: -30%;
+}
+
+main #Home h1:nth-of-type(1) {
+  font-size: 5em;
+}
+main #Home h1:nth-of-type(2) {
+  font-size: 3em;
+}
+
+#hexagon {
+    transform: rotate(90deg);
+    z-index: 1;
+    height: 100px;
+}
+
+main #Home p, #photo {
+  top: -10%;
 }
