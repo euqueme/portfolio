@@ -102,8 +102,8 @@ div {
   display: block;
 }
 
-body, a, #About a {
-  line-height: 1;
+body, a, p {
+  line-height: normal;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
   color: #C77942;
@@ -200,20 +200,23 @@ h2 {
 
 #About a {
   background-color: transparent;
-  display: table;
   border: 1px solid #C77942;
   padding: 8px 45px;
 }
 
-h2, h3, #About a {
+#About a, #Portfolio p {
+  display: table;
+}
+
+h2, h3, #About a, #Portfolio p {
   position: relative;
 }
 
-h2, h3, #About a {
+h2, h3, #About a, #Portfolio p {
   margin: 0 auto;
 }
 
-h3, #About a {
+h3, #About a, #Portfolio p {
   font-size: 1.1em;
 }
 
@@ -225,10 +228,75 @@ h3, #About a {
 
 #About p {
   font-family: 'EB Garamond', serif;
-  padding: 0 80px 80px;
-  line-height: normal;
+  padding: 0 50px 40px;
 }
 
 #About, #Portfolio {
   top: -80px;
+}
+
+#Portfolio article {
+  height: 280px;
+  position: relative;
+}
+
+#Portfolio div article p {
+  line-height: 1.2;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+.d-hid{
+  z-index: 2;
+  background-color: rgba(229, 226, 211, 0.9)
+}
+
+.d-show{
+  z-index: 3;
+}
+
+#Portfolio div div:nth-of-type(1n) article .d-show {
+  background: url(../img/workagram-mockup.png) 50% 100%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(2n) article .d-show {
+  background: url(../img/tic-tac-toe-ruby-mockup.png) 50% 100%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(3n) article .d-show {
+  background: url(../img/framework-mockup.png) 50% 8%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(4n) article .d-show {
+  background: url(../img/bootstrap-mockup.png) 35% 100%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(5n) article .d-show {
+  background: url(../img/responsive-mockup.png) 50% 5%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(6n) article .d-show {
+  background: url(../img/Heat-Map-mockup.png) 50% 100%/cover no-repeat;
+}
+
+.d-hid, .d-show {
+  display: block !important;
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+
+.d-hid p {
+  overflow: hidden;
+  position: relative;
+}
+
+.d-show:hover {
+   z-index: 0;
+}
+
+.d-hid:hover, .d-hid h2:hover, .d-hid p:hover {
+  z-index: 5;
 }
