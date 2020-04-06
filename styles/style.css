@@ -78,7 +78,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+.row {
   margin: 0;
   padding: 0;
   font: inherit;
@@ -102,7 +103,7 @@ div {
   display: block;
 }
 
-body, a, p {
+body, header a, main a, p {
   line-height: normal;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
@@ -160,10 +161,16 @@ main #Home p {
     font-family: sans-serif;
     font-size: 0.8em;
     z-index: 2;
+    background-color: transparent;
+    top: -40px;
+}
+
+#photo {
+  top: -50px;
 }
 
 main #Home h1 {
-    top: -30%;
+    top: -25%;
 }
 
 main #Home h1:nth-of-type(1) {
@@ -176,26 +183,27 @@ main #Home h1:nth-of-type(2) {
 #hexagon {
     transform: rotate(90deg);
     height: 100px;
+    top: 25px;
 }
 
 h2, #hexagon {
   z-index: 1;
 }
 
-main #Home p, #photo {
-  top: -10%;
-}
-
-h2 {
+#About h2, #Portfolio h2, #Contact h2 {
   font-size: 1.5em;
-  top: -15px;
+  top: -10px;
   width: max-content;
   background: #E5E2D3;
   padding: 0 10px;
 }
 
+#About h2, #Portfolio h2 {
+  background: #E5E2D3;
+}
+
 .b-separator {
-  border-top: rgba(198, 196, 173, 1) 4px solid;
+  border-top: rgba(198, 196, 173, 1) 3px solid;
 }
 
 #About a {
@@ -204,19 +212,16 @@ h2 {
   padding: 8px 45px;
 }
 
-#About a, #Portfolio p {
+#hexagon, #photo, #Home p, #About a,  #Portfolio p, #Contact p {
   display: table;
 }
 
-h2, h3, #About a, #Portfolio p {
+h2, h3, #hexagon, #photo, #Home p, #About a, #Portfolio p, #Contact p {
   position: relative;
-}
-
-h2, h3, #About a, #Portfolio p {
   margin: 0 auto;
 }
 
-h3, #About a, #Portfolio p {
+h3, #hexagon, #About a, #Portfolio p {
   font-size: 1.1em;
 }
 
@@ -287,7 +292,6 @@ h3, #About a, #Portfolio p {
   width: 100%;
 }
 
-
 .d-hid p {
   overflow: hidden;
   position: relative;
@@ -299,4 +303,39 @@ h3, #About a, #Portfolio p {
 
 .d-hid:hover, .d-hid h2:hover, .d-hid p:hover {
   z-index: 5;
+}
+
+footer {
+  background-color: #C77942;
+}
+
+.w-separator {
+  border-bottom: white 3px solid;
+  height: 15px;
+}
+
+#Contact h2, #Contact p, #Contact ul li {
+  background: #C77942;
+}
+
+#Contact ul li:nth-of-type(1n) a {
+  background: url(../img/twitter.webp) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(2n) a {
+  background: url(../img/LinkedIn.png) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(3n) a {
+  background: url(../img/gmail.png) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(4n) a {
+  background: url(../img/github.png) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(5n) a {
+  background: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
 }
