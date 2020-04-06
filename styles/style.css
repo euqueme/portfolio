@@ -147,6 +147,10 @@ header {
     border-color: #C77942;
 }
 
+header a:hover {
+  color: #C77942;
+}
+
 nav, section img, section h1 {
     margin: 10px auto;
 }
@@ -212,6 +216,11 @@ h2, #hexagon {
   padding: 8px 45px;
 }
 
+#About a:hover {
+  color: white;
+  background-color: #C77942
+}
+
 #hexagon, #photo, #Home p, #About a,  #Portfolio p, #Contact p {
   display: table;
 }
@@ -231,8 +240,11 @@ h3, #hexagon, #About a, #Portfolio p {
   margin: 10px auto;
 }
 
-#About p {
+#About p, #Contact p {
   font-family: 'EB Garamond', serif;
+}
+
+#About p {
   padding: 0 50px 40px;
 }
 
@@ -241,19 +253,23 @@ h3, #hexagon, #About a, #Portfolio p {
 }
 
 #Portfolio article {
-  height: 280px;
+  height: 210px;
   position: relative;
 }
 
 #Portfolio div article p {
   line-height: 1.2;
-  font-size: 1.2em;
   background-color: transparent;
+}
+
+#Portfolio div article p, #Contact p {
+  font-size: 0.9em;
 }
 
 .d-hid{
   z-index: 2;
-  background-color: rgba(229, 226, 211, 0.9)
+  background-color: rgba(229, 226, 211, 0.9);
+  overflow: hidden;
 }
 
 .d-show{
@@ -338,4 +354,20 @@ footer {
   background: none;
   font-family: 'Roboto Slab', serif;
   font-size: 1.5em;
+}
+
+@media (min-width: 900px) {
+  #Portfolio article {
+    height: 245px;
+  }
+
+  #Portfolio div article p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1300px) {
+  #Portfolio article {
+    height: 280px;
+  }
 }
