@@ -103,7 +103,7 @@ div {
   display: block;
 }
 
-body, header a, main a, p {
+body, header a, main a, p, h3 {
   line-height: normal;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
@@ -356,6 +356,16 @@ footer {
   font-size: 1.5em;
 }
 
+.carousel-header h5,.carousel-caption p {
+  font-family: sans-serif;
+  line-height: 1.75;
+}
+
+.carousel-caption a:hover {
+  color: rgba(1,1,1,.5) !important;
+  background-color: white !important;
+}
+
 @media (min-width: 900px) {
   #Portfolio article {
     height: 245px;
@@ -369,5 +379,11 @@ footer {
 @media (min-width: 1300px) {
   #Portfolio article {
     height: 280px;
+  }
+}
+
+@media (min-width: 750px) {
+  .modal-dialog {
+    max-width: 40%;
   }
 }
