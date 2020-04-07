@@ -78,7 +78,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+.row {
   margin: 0;
   padding: 0;
   font: inherit;
@@ -97,13 +98,16 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+div {
   display: block;
 }
 
-body {
-  line-height: 1;
+body, header a, main a, p, h3 {
+  line-height: normal;
   background: #E5E2D3;
+  font-family: 'Josefin Slab', serif;
+  color: #C77942;
 }
 
 ol,
@@ -129,7 +133,257 @@ table {
   border-spacing: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
-  border: white 2px solid;
+  border: transparent 0.1px solid;
+}
+
+header {
+    border-width: 15px 0 0 0;
+    border-color: #C77942;
+}
+
+header a:hover {
+  color: #C77942;
+}
+
+nav, section img, section h1 {
+    margin: 10px auto;
+}
+
+nav ul li {
+    margin: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+main #Home p {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    z-index: 2;
+    background-color: transparent;
+    top: -40px;
+}
+
+#photo {
+  top: -50px;
+}
+
+main #Home h1 {
+    top: -25%;
+}
+
+main #Home h1:nth-of-type(1) {
+  font-size: 5em;
+}
+main #Home h1:nth-of-type(2) {
+  font-size: 3em;
+}
+
+#hexagon {
+    transform: rotate(90deg);
+    height: 100px;
+    top: 25px;
+}
+
+h2, #hexagon {
+  z-index: 1;
+}
+
+#About h2, #Portfolio h2, #Contact h2 {
+  font-size: 1.5em;
+  top: -10px;
+  width: max-content;
+  background: #E5E2D3;
+  padding: 0 10px;
+}
+
+#About h2, #Portfolio h2 {
+  background: #E5E2D3;
+}
+
+.b-separator {
+  border-top: rgba(198, 196, 173, 1) 3px solid;
+}
+
+#About a {
+  background-color: transparent;
+  border: 1px solid #C77942;
+  padding: 8px 45px;
+}
+
+#About a:hover {
+  color: white;
+  background-color: #C77942
+}
+
+#hexagon, #photo, #Home p, #About a,  #Portfolio p, #Contact p {
+  display: table;
+}
+
+h2, h3, #hexagon, #photo, #Home p, #About a, #Portfolio p, #Contact p {
+  position: relative;
+  margin: 0 auto;
+}
+
+h3, #hexagon, #About a, #Portfolio p {
+  font-size: 1.1em;
+}
+
+.o-separator {
+  border-bottom: #C77942 3px solid;
+  width: 45px;
+  margin: 10px auto;
+}
+
+#About p, #Contact p {
+  font-family: 'EB Garamond', serif;
+}
+
+#About p {
+  padding: 0 50px 40px;
+}
+
+#About, #Portfolio {
+  top: -80px;
+}
+
+#Portfolio article {
+  height: 210px;
+  position: relative;
+}
+
+#Portfolio div article p {
+  line-height: 1.2;
+  background-color: transparent;
+}
+
+#Portfolio div article p, #Contact p {
+  font-size: 0.9em;
+}
+
+.d-hid{
+  z-index: 2;
+  background-color: rgba(229, 226, 211, 0.9);
+  overflow: hidden;
+}
+
+.d-show{
+  z-index: 3;
+}
+
+#Portfolio div div:nth-of-type(1n) article .d-show {
+  background: url(../img/workagram-mockup.png) 50% 100%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(2n) article .d-show {
+  background: url(../img/tic-tac-toe-ruby-mockup.png) 50% 100%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(3n) article .d-show {
+  background: url(../img/framework-mockup.png) 50% 8%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(4n) article .d-show {
+  background: url(../img/bootstrap-mockup.png) 35% 100%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(5n) article .d-show {
+  background: url(../img/responsive-mockup.png) 50% 5%/cover no-repeat;
+}
+
+#Portfolio div div:nth-of-type(6n) article .d-show {
+  background: url(../img/Heat-Map-mockup.png) 50% 100%/cover no-repeat;
+}
+
+.d-hid, .d-show {
+  display: block !important;
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.d-hid p {
+  overflow: hidden;
+  position: relative;
+}
+
+.d-show:hover {
+   z-index: 0;
+}
+
+.d-hid:hover, .d-hid h2:hover, .d-hid p:hover {
+  z-index: 5;
+}
+
+footer {
+  background-color: #C77942;
+}
+
+.w-separator {
+  border-bottom: white 3px solid;
+  height: 15px;
+}
+
+#Contact h2, #Contact p, #Contact ul li {
+  background: #C77942;
+}
+
+#Contact ul li:nth-of-type(1n) a {
+  background: url(../img/twitter.webp) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(2n) a {
+  background: url(../img/LinkedIn.png) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(3n) a {
+  background: url(../img/gmail.png) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(4n) a {
+  background: url(../img/github.png) 50% 100%/contain no-repeat;
+}
+
+#Contact ul li:nth-of-type(5n) a {
+  background: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+}
+
+.carousel-header h5,.carousel-caption p {
+  font-family: sans-serif;
+  line-height: 1.75;
+}
+
+.carousel-caption a:hover {
+  color: rgba(1,1,1,.5) !important;
+  background-color: white !important;
+}
+
+@media (min-width: 900px) {
+  #Portfolio article {
+    height: 245px;
+  }
+
+  #Portfolio div article p {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1300px) {
+  #Portfolio article {
+    height: 280px;
+  }
+}
+
+@media (min-width: 750px) {
+  .modal-dialog {
+    max-width: 40%;
+  }
 }
