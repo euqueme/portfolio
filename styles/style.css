@@ -246,7 +246,7 @@ h3, #hexagon, #About a, #Portfolio p {
 
 #About p {
   font-size: 1.2em;
-  padding: 0 50px 40px;
+  padding: 0 25px 40px;
 }
 
 #About, #Portfolio {
@@ -407,3 +407,22 @@ footer {
   }
 }
 
+.co-xl-4 {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .co-xl-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 1350px) {
+  .co-xl-4 {
+    -ms-flex: 0 0 33.333333% !important;
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+}
