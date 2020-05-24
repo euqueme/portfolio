@@ -246,7 +246,7 @@ h3, #hexagon, #About a, #Portfolio p {
 
 #About p {
   font-size: 1.2em;
-  padding: 0 25px 40px;
+  padding: 0 45px 40px;
 }
 
 #About, #Portfolio {
@@ -361,6 +361,11 @@ footer {
   font-family: sans-serif;
   line-height: 1.75;
   font-size: .8em;
+}
+
+.carousel-caption p {
+  background: rgba(249,105,14,0.6);
+
 }
 
 .carousel-caption a:hover {
