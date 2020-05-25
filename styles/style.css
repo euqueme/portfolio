@@ -245,7 +245,8 @@ h3, #hexagon, #About a, #Portfolio p {
 }
 
 #About p {
-  padding: 0 50px 40px;
+  font-size: 1.2em;
+  padding: 0 30px 40px;
 }
 
 #About, #Portfolio {
@@ -359,6 +360,12 @@ footer {
 .carousel-header h5,.carousel-caption p {
   font-family: sans-serif;
   line-height: 1.75;
+  font-size: .8em;
+}
+
+.carousel-caption p {
+  background: rgba(249,105,14,0.6);
+
 }
 
 .carousel-caption a:hover {
@@ -366,13 +373,52 @@ footer {
   background-color: white !important;
 }
 
-@media (min-width: 900px) {
+.modal-dialog {
+  min-width: 90%;
+}
+
+@media (min-width: 310px) {
   #Portfolio article {
-    height: 245px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 410px) {
+  #Portfolio article {
+    height: 300px;
+  }
+}
+
+@media (min-width: 650px) {
+  .modal-dialog {
+    min-width: 45%;
+    max-width: 65%;
   }
 
-  #Portfolio div article p {
+  .carousel-header h5,.carousel-caption p {
+    font-size: 1em;
+  }
+  
+  #Portfolio article {
+    height: 380px;
+  }
+}
+
+@media (min-width: 900px) {
+  #Portfolio article {
+    height: 450px;
+  }
+
+  #Portfolio div article p, .carousel-header h5,.carousel-caption p {
     font-size: 1.2em;
+  }
+
+  .modal-dialog {
+    max-width: 45%;
+  }
+
+  #About p {
+    font-size: 1em;
   }
 }
 
@@ -382,8 +428,30 @@ footer {
   }
 }
 
-@media (min-width: 750px) {
-  .modal-dialog {
-    max-width: 40%;
+.co-xl-4 {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  #Portfolio article {
+    height: 350px;
+  }
+  .co-xl-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1350px) {
+  .col-xl-4 {
+    -ms-flex: 0 0 33.333333% !important;
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
   }
 }
