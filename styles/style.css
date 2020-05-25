@@ -103,7 +103,7 @@ div {
   display: block;
 }
 
-body, header a, main a, p, h3 {
+body, header a, main a, p, h3, nav button {
   line-height: normal;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
@@ -151,6 +151,12 @@ header a:hover {
   color: #C77942;
 }
 
+.dropdown-item {
+  color: white;
+  background-color: #C77942;
+  border-bottom: 1px solid #E5E2D3; 
+}
+
 nav, section img, section h1 {
     margin: 10px auto;
 }
@@ -184,13 +190,7 @@ main #Home h1:nth-of-type(2) {
   font-size: 3em;
 }
 
-#hexagon {
-    transform: rotate(90deg);
-    height: 100px;
-    top: 25px;
-}
-
-h2, #hexagon {
+h2 {
   z-index: 1;
 }
 
@@ -210,7 +210,7 @@ h2, #hexagon {
   border-top: rgba(198, 196, 173, 1) 3px solid;
 }
 
-#About a {
+nav button, #About a {
   background-color: transparent;
   border: 1px solid #C77942;
   padding: 8px 45px;
@@ -221,17 +221,17 @@ h2, #hexagon {
   background-color: #C77942
 }
 
-#hexagon, #photo, #Home p, #About a,  #Portfolio p, #Contact p {
+#photo, #Home p, #About a,  #Portfolio p, #Contact p {
   display: table;
 }
 
-h2, h3, #hexagon, #photo, #Home p, #About a, #Portfolio p, #Contact p {
+h2, h3, #photo, #Home p, #About a, #Portfolio p, #Contact p {
   position: relative;
   margin: 0 auto;
 }
 
-h3, #hexagon, #About a, #Portfolio p {
-  font-size: 1.1em;
+h3, #About a, #Portfolio p {
+  font-size: 1.6em;
 }
 
 .o-separator {
@@ -245,8 +245,8 @@ h3, #hexagon, #About a, #Portfolio p {
 }
 
 #About p {
-  font-size: 1.2em;
-  padding: 0 30px 40px;
+  font-size: 1.3em;
+  padding: 0 15px 40px;
 }
 
 #About, #Portfolio {
@@ -416,10 +416,6 @@ footer {
   .modal-dialog {
     max-width: 45%;
   }
-
-  #About p {
-    font-size: 1em;
-  }
 }
 
 @media (min-width: 1300px) {
@@ -433,6 +429,10 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  #About p {
+    font-size: 1.15em;
+  }
+  
   #Portfolio article {
     height: 350px;
   }
