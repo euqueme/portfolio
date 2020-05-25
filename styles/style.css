@@ -254,7 +254,7 @@ h3, #About a, #Portfolio p {
 }
 
 #Portfolio article {
-  height: 210px;
+  height: 150px;
   position: relative;
 }
 
@@ -379,13 +379,13 @@ footer {
 
 @media (min-width: 310px) {
   #Portfolio article {
-    height: 450px;
+    height: 280px;
   }
 }
 
 @media (min-width: 410px) {
   #Portfolio article {
-    height: 300px;
+    height: 380px;
   }
 }
 
@@ -406,7 +406,7 @@ footer {
 
 @media (min-width: 900px) {
   #Portfolio article {
-    height: 450px;
+    height: 550px;
   }
 
   #Portfolio div article p, .carousel-header h5,.carousel-caption p {
@@ -418,14 +418,14 @@ footer {
   }
 }
 
-@media (min-width: 1300px) {
-  #Portfolio article {
-    height: 280px;
-  }
-}
-
 .co-xl-4 {
   padding: 0;
+}
+
+@media (min-width: 1024px) {
+  #Portfolio article {
+    height: 410px;
+}
 }
 
 @media (min-width: 1200px) {
@@ -434,7 +434,7 @@ footer {
   }
   
   #Portfolio article {
-    height: 350px;
+    height: 380px;
   }
   .co-xl-4 {
     -ms-flex: 0 0 100% !important;
@@ -445,6 +445,12 @@ footer {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  #Portfolio article {
+    height: 300px;
   }
 }
 
