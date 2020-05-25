@@ -103,7 +103,7 @@ div {
   display: block;
 }
 
-body, header a, main a, p, h3 {
+body, header a, main a, p, h3, nav button {
   line-height: normal;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
@@ -149,6 +149,12 @@ header {
 
 header a:hover {
   color: #C77942;
+}
+
+.dropdown-item {
+  color: white;
+  background-color: #C77942;
+  border-bottom: 1px solid #E5E2D3; 
 }
 
 nav, section img, section h1 {
@@ -204,7 +210,7 @@ h2 {
   border-top: rgba(198, 196, 173, 1) 3px solid;
 }
 
-#About a {
+nav button, #About a {
   background-color: transparent;
   border: 1px solid #C77942;
   padding: 8px 45px;

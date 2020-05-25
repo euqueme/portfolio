@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Maru's Portfolio</title>
     <link
     rel="stylesheet"
@@ -15,7 +16,18 @@
   <body>
       <header class="row d-flex justify-content-center mb-5">
           <nav class="col-12 col-sm-9 mx-xl-5">
-            <ul class="d-flex justify-content-start mx-xl-5">
+            <div class="dropdown d-xl-none">
+                <button class="dropdown-toggle text-center py-2 px-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Menu
+				</button>
+				<div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+				  <a class="dropdown-item" href="#">HOME</a>
+				  <a class="dropdown-item" href="#About">ABOUT</a>
+				  <a class="dropdown-item" href="#Portfolio">PORTFOLIO</a>
+				  <a class="dropdown-item" href="#Contact">CONTACT</a>
+				</div>
+			</div>	  
+            <ul class="d-none d-xl-flex justify-content-start mx-xl-5">
                 <li class="ml-xl-5">
                     <a href="#">HOME</a>
                 </li>
