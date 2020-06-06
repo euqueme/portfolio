@@ -103,7 +103,7 @@ div {
   display: block;
 }
 
-body, header a, main a, p, h3 {
+body, header a, main a, p, h3, nav button {
   line-height: normal;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
@@ -151,6 +151,12 @@ header a:hover {
   color: #C77942;
 }
 
+.dropdown-item {
+  color: white;
+  background-color: #C77942;
+  border-bottom: 1px solid #E5E2D3; 
+}
+
 nav, section img, section h1 {
     margin: 10px auto;
 }
@@ -184,13 +190,7 @@ main #Home h1:nth-of-type(2) {
   font-size: 3em;
 }
 
-#hexagon {
-    transform: rotate(90deg);
-    height: 100px;
-    top: 25px;
-}
-
-h2, #hexagon {
+h2 {
   z-index: 1;
 }
 
@@ -210,7 +210,7 @@ h2, #hexagon {
   border-top: rgba(198, 196, 173, 1) 3px solid;
 }
 
-#About a {
+nav button, #About a {
   background-color: transparent;
   border: 1px solid #C77942;
   padding: 8px 45px;
@@ -221,17 +221,17 @@ h2, #hexagon {
   background-color: #C77942
 }
 
-#hexagon, #photo, #Home p, #About a,  #Portfolio p, #Contact p {
+#photo, #Home p, #About a,  #Portfolio p, #Contact p {
   display: table;
 }
 
-h2, h3, #hexagon, #photo, #Home p, #About a, #Portfolio p, #Contact p {
+h2, h3, #photo, #Home p, #About a, #Portfolio p, #Contact p {
   position: relative;
   margin: 0 auto;
 }
 
-h3, #hexagon, #About a, #Portfolio p {
-  font-size: 1.1em;
+h3, #About a, #Portfolio p {
+  font-size: 1.6em;
 }
 
 .o-separator {
@@ -245,8 +245,8 @@ h3, #hexagon, #About a, #Portfolio p {
 }
 
 #About p {
-  font-size: 1.2em;
-  padding: 0 50px 40px;
+  font-size: 1.3em;
+  padding: 0 15px 40px;
 }
 
 #About, #Portfolio {
@@ -254,7 +254,7 @@ h3, #hexagon, #About a, #Portfolio p {
 }
 
 #Portfolio article {
-  height: 210px;
+  height: 150px;
   position: relative;
 }
 
@@ -363,6 +363,11 @@ footer {
   font-size: .8em;
 }
 
+.carousel-caption p {
+  background: rgba(249,105,14,0.6);
+
+}
+
 .carousel-caption a:hover {
   color: rgba(1,1,1,.5) !important;
   background-color: white !important;
@@ -372,7 +377,19 @@ footer {
   min-width: 90%;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 310px) {
+  #Portfolio article {
+    height: 280px;
+  }
+}
+
+@media (min-width: 410px) {
+  #Portfolio article {
+    height: 380px;
+  }
+}
+
+@media (min-width: 650px) {
   .modal-dialog {
     min-width: 45%;
     max-width: 65%;
@@ -381,11 +398,15 @@ footer {
   .carousel-header h5,.carousel-caption p {
     font-size: 1em;
   }
+  
+  #Portfolio article {
+    height: 380px;
+  }
 }
 
 @media (min-width: 900px) {
   #Portfolio article {
-    height: 245px;
+    height: 550px;
   }
 
   #Portfolio div article p, .carousel-header h5,.carousel-caption p {
@@ -395,15 +416,48 @@ footer {
   .modal-dialog {
     max-width: 45%;
   }
+}
 
+.co-xl-4 {
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  #Portfolio article {
+    height: 410px;
+}
+}
+
+@media (min-width: 1200px) {
   #About p {
-    font-size: 1em;
+    font-size: 1.15em;
+  }
+  
+  #Portfolio article {
+    height: 380px;
+  }
+  .co-xl-4 {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
 @media (min-width: 1300px) {
   #Portfolio article {
-    height: 280px;
+    height: 300px;
   }
 }
 
+@media (min-width: 1350px) {
+  .col-xl-4 {
+    -ms-flex: 0 0 33.333333% !important;
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+}
