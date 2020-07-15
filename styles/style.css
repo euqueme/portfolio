@@ -336,7 +336,7 @@ footer {
 }
 
 #Contact ul li:nth-of-type(1n) a {
-  background: url(../img/twitter.webp) 50% 100%/contain no-repeat;
+  background: url(../img/twitter-logo.png) 50% 100%/contain no-repeat;
 }
 
 #Contact ul li:nth-of-type(2n) a {
