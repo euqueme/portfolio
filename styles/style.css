@@ -278,27 +278,27 @@ h3, #About a, #Portfolio p {
 }
 
 #Portfolio div div:nth-of-type(1n) article .d-show {
-  background: url(../img/workagram-mockup.png) 50% 100%/cover no-repeat;
+  background: url(../img/tracker-api-mockup.jpg) 50% 100%/cover no-repeat;
 }
 
 #Portfolio div div:nth-of-type(2n) article .d-show {
-  background: url(../img/tic-tac-toe-ruby-mockup.png) 50% 100%/cover no-repeat;
+  background: url(../img/workagram-mockup.jpg) 50% 100%/cover no-repeat;
 }
 
 #Portfolio div div:nth-of-type(3n) article .d-show {
-  background: url(../img/framework-mockup.png) 50% 8%/cover no-repeat;
+  background: url(../img/stay-in-touch-mockup.jpg) 50% 50%/cover no-repeat;
 }
 
 #Portfolio div div:nth-of-type(4n) article .d-show {
-  background: url(../img/bootstrap-mockup.png) 35% 100%/cover no-repeat;
+  background: url(../img/blogger2-mockup.jpg) 35% 100%/cover no-repeat;
 }
 
 #Portfolio div div:nth-of-type(5n) article .d-show {
-  background: url(../img/responsive-mockup.png) 50% 5%/cover no-repeat;
+  background: url(../img/tic-tac-toe-ruby-mockup.jpg) 50% 5%/cover no-repeat;
 }
 
 #Portfolio div div:nth-of-type(6n) article .d-show {
-  background: url(../img/Heat-Map-mockup.png) 50% 100%/cover no-repeat;
+  background: url(../img/framework-mockup.jpg) 15% 100%/cover no-repeat;
 }
 
 .d-hid, .d-show {
@@ -363,6 +363,10 @@ footer {
   font-size: .8em;
 }
 
+.carousel-caption {
+  padding: 0
+}
+
 .carousel-caption p {
   background: rgba(249,105,14,0.6);
 
@@ -371,6 +375,16 @@ footer {
 .carousel-caption a:hover {
   color: rgba(1,1,1,.5) !important;
   background-color: white !important;
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 7.5%;
+  opacity: .05;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  opacity: .3;
 }
 
 .modal-dialog {
