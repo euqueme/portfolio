@@ -358,18 +358,23 @@ footer {
 }
 
 .carousel-header h5,.carousel-caption p {
-  font-family: sans-serif;
-  line-height: 1.75;
   font-size: .8em;
 }
 
+.carousel-header h5 {
+  font-family: 'Josefin Slab', serif;
+  line-height: 1.75;
+}
+
 .carousel-caption {
-  padding: 0
+  padding-top: 0;
+  background: rgba(249,105,14,0.6) !important;
+  font-family: 'EB Garamond', serif;
 }
 
 .carousel-caption p {
-  background: rgba(249,105,14,0.6);
-
+  background: transparent;
+  line-height: normal
 }
 
 .carousel-caption a:hover {
@@ -395,11 +400,20 @@ footer {
   #Portfolio article {
     height: 280px;
   }
+  #Portfolio div article p{
+    font-size: 1.2em;
+  }
+  .carousel-header h5,.carousel-caption p {
+    font-size: 0.55em;
+  }
 }
 
 @media (min-width: 410px) {
   #Portfolio article {
     height: 380px;
+  }
+  .carousel-header h5,.carousel-caption p {
+    font-size: 0.60em;
   }
 }
 
@@ -408,25 +422,21 @@ footer {
     min-width: 45%;
     max-width: 65%;
   }
-
-  .carousel-header h5,.carousel-caption p {
-    font-size: 1em;
-  }
   
   #Portfolio article {
     height: 380px;
   }
+  
+  .carousel-header h5,.carousel-caption p {
+    font-size: 0.65em;
+  }
+  
 }
 
 @media (min-width: 900px) {
   #Portfolio article {
     height: 550px;
   }
-
-  #Portfolio div article p, .carousel-header h5,.carousel-caption p {
-    font-size: 1.2em;
-  }
-
   .modal-dialog {
     max-width: 45%;
   }
@@ -439,7 +449,7 @@ footer {
 @media (min-width: 1024px) {
   #Portfolio article {
     height: 410px;
-}
+  }
 }
 
 @media (min-width: 1200px) {
@@ -465,6 +475,12 @@ footer {
 @media (min-width: 1300px) {
   #Portfolio article {
     height: 300px;
+  }
+  #Portfolio div article p, .carousel-header h5,.carousel-caption p {
+    font-size: 1em;
+  }
+  .carousel-header h5,.carousel-caption p {
+    font-size: 0.95em;
   }
 }
 
