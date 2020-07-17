@@ -107,7 +107,7 @@ body, header a, main a, p, h3, nav button {
   line-height: normal;
   background: #E5E2D3;
   font-family: 'Josefin Slab', serif;
-  color: #C77942;
+  color: #FF4000;
 }
 
 ol,
@@ -144,16 +144,16 @@ a:hover {
 
 header {
     border-width: 15px 0 0 0;
-    border-color: #C77942;
+    border-color: #FF4000;
 }
 
 header a:hover {
-  color: #C77942;
+  color: #FF4000;
 }
 
 .dropdown-item {
   color: white;
-  background-color: #C77942;
+  background-color: #FF4000;
   border-bottom: 1px solid #E5E2D3; 
 }
 
@@ -212,13 +212,13 @@ h2 {
 
 nav button, #About a {
   background-color: transparent;
-  border: 1px solid #C77942;
+  border: 1px solid #FF4000;
   padding: 8px 45px;
 }
 
 #About a:hover {
   color: white;
-  background-color: #C77942
+  background-color: #FF4000
 }
 
 #photo, #Home p, #About a,  #Portfolio p, #Contact p {
@@ -235,7 +235,7 @@ h3, #About a, #Portfolio p {
 }
 
 .o-separator {
-  border-bottom: #C77942 3px solid;
+  border-bottom: #FF4000 3px solid;
   width: 45px;
   margin: 10px auto;
 }
@@ -323,7 +323,7 @@ h3, #About a, #Portfolio p {
 }
 
 footer {
-  background-color: #C77942;
+  background-color: #FF4000;
 }
 
 .w-separator {
@@ -332,7 +332,7 @@ footer {
 }
 
 #Contact h2, #Contact p, #Contact ul li {
-  background: #C77942;
+  background: #FF4000;
 }
 
 #Contact ul li:nth-of-type(1n) a {
