@@ -264,7 +264,7 @@ h3, #About a, #Portfolio p {
 }
 
 #Portfolio div article p, #Contact p {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .d-hid{
@@ -400,11 +400,8 @@ footer {
   #Portfolio article {
     height: 280px;
   }
-  #Portfolio div article p{
-    font-size: 1.2em;
-  }
-  .carousel-header h5,.carousel-caption p {
-    font-size: 0.55em;
+  #Portfolio div article p, .carousel-header h5,.carousel-caption p {
+    font-size: 0.95em;
   }
 }
 
@@ -412,8 +409,11 @@ footer {
   #Portfolio article {
     height: 380px;
   }
+  #Portfolio div article p {
+    font-size: 1.15em;
+  }
   .carousel-header h5,.carousel-caption p {
-    font-size: 0.60em;
+    font-size: 1em;
   }
 }
 
@@ -428,7 +428,7 @@ footer {
   }
   
   .carousel-header h5,.carousel-caption p {
-    font-size: 0.65em;
+    font-size: 1.05em;
   }
   
 }
@@ -436,9 +436,14 @@ footer {
 @media (min-width: 900px) {
   #Portfolio article {
     height: 550px;
+	padding: 100px;
   }
   .modal-dialog {
     max-width: 45%;
+  }
+  
+  #Portfolio div article p {
+    font-size: 1.2em;
   }
 }
 
@@ -476,7 +481,7 @@ footer {
   #Portfolio article {
     height: 300px;
   }
-  #Portfolio div article p, .carousel-header h5,.carousel-caption p {
+  #Portfolio div article p {
     font-size: 1em;
   }
   .carousel-header h5,.carousel-caption p {
