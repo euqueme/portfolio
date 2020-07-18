@@ -357,11 +357,11 @@ footer {
   font-size: 1.5em;
 }
 
-.carousel-header h5,.carousel-caption p {
+.carousel-header h1,.carousel-caption p {
   font-size: .8em;
 }
 
-.carousel-header h5 {
+.carousel-header h1 {
   font-family: 'Josefin Slab', serif;
   line-height: 1.75;
 }
@@ -400,7 +400,7 @@ footer {
   #Portfolio article {
     height: 280px;
   }
-  #Portfolio div article p, .carousel-header h5,.carousel-caption p {
+  #Portfolio div article p, .carousel-header h1,.carousel-caption p {
     font-size: 0.95em;
   }
 }
@@ -412,7 +412,7 @@ footer {
   #Portfolio div article p {
     font-size: 1.15em;
   }
-  .carousel-header h5,.carousel-caption p {
+  .carousel-header h1,.carousel-caption p {
     font-size: 1em;
   }
 }
@@ -427,7 +427,7 @@ footer {
     height: 380px;
   }
   
-  .carousel-header h5,.carousel-caption p {
+  .carousel-header h1,.carousel-caption p {
     font-size: 1.05em;
   }
   
@@ -484,7 +484,7 @@ footer {
   #Portfolio div article p {
     font-size: 1em;
   }
-  .carousel-header h5,.carousel-caption p {
+  .carousel-header h1,.carousel-caption p {
     font-size: 0.95em;
   }
 }
