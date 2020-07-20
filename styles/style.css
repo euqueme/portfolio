@@ -194,6 +194,11 @@ h2 {
   z-index: 1;
 }
 
+.shadow {
+  box-shadow: none !important;
+  text-shadow: 2px 2px 10px #FFDF00;
+}
+
 #About h2, #Portfolio h2, #Contact h2 {
   font-size: 1.5em;
   top: -10px;
@@ -436,7 +441,10 @@ footer {
 @media (min-width: 900px) {
   #Portfolio article {
     height: 550px;
-	padding: 100px;
+  }
+  
+  #Portfolio article a div h3{
+	padding-top: 125px !important;
   }
   .modal-dialog {
     max-width: 45%;
@@ -454,6 +462,10 @@ footer {
 @media (min-width: 1024px) {
   #Portfolio article {
     height: 410px;
+  }
+  
+  #Portfolio article a div h3 {
+	padding: 0.5em !important;
   }
 }
 
